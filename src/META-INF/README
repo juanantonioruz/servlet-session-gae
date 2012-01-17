@@ -1,0 +1,16 @@
+<filter>
+    <filter-name>filtroSes</filter-name>
+    <filter-class>com.enjava.FiltroSes</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>filtroSes</filter-name>
+    <url-pattern>/*</url-pattern>
+    <dispatcher>REQUEST</dispatcher>
+    <dispatcher>FORWARD</dispatcher>
+    <dispatcher>INCLUDE</dispatcher>
+    <dispatcher>ERROR</dispatcher>
+  </filter-mapping>
+  
+   <listener>
+    <listener-class>com.enjava.ListenerContexto</listener-class>
+  </listener>
